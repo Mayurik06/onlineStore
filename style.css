@@ -167,6 +167,8 @@ font-weight: 500;
 }
 .about p{
     font-size: 18px;
+    word-spacing: 1.6;
+    line-height: 1.8;
 }
 .more-ab{
     background-image:url(images/replace.webp);
@@ -184,7 +186,8 @@ font-weight: 500;
 }
 .more-ab p{
     font-size: 40px;
-    
+    margin-bottom: 20PX;
+  
 }
 /*--footer--*/
 .foot{
@@ -199,4 +202,3 @@ font-weight: 500;
     width: 30px;
     margin-right: 20px;
 }
-/* demo */
