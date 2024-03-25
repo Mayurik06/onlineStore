@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container flex-container">
+          <nav class="navigation">
+            <ul class="flex-container">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="store.html">Store</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </nav>
+          <div class="logo-container">
+            <img src="images/logo.png" alt="">
+          </div>
+          <div class="cart">
+            <button class="btn addCartBtn">Cart<span class="cart-count"></span></button>
+          </div>
+        </div>
+      </header>
+<!--sidebar-->
+      <sidebar class="sidebar active">
+        <h3 class="cart-head">My cart</h3>
+        <div class="display-cart">
+        </div>
+        <img src="icon/x.svg" alt="" class="cross">
+
+      <p class="cart-msg">Empty Cart</p>
+        <div class="calculate active">
+       <p class="total">Total price:<span class="t-price"></span></p>
+       <button class="buy-btn">Buy</button>
+        </div>
+        </sidebar>
+<section class="container product-container main-pro"></section> 
+
+
+      <script src="frontend.js"></script>
+</body>
+</html>

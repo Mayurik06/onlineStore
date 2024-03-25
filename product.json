@@ -1,0 +1,72 @@
+[
+    {
+      "name": "Peperomia Caperata",
+      "img": "images/plant-1.jpg",
+      "price": {
+       "original_price": 450,
+        "dis_price": 350
+      },
+      "id":0
+    },
+  
+    {
+      "name": "House Shape Close",
+      "img": "images/plant-two.jpg",
+      "price": {"original_price": 500, "dis_price": 400 },
+      "id":1
+    },
+  
+    {
+      "name": "Zantedeschia Calla",
+      "img": "images/plant-3.jpg",
+      "price": { "original_price": 600, "dis_price": 450 },
+      "id":2
+    }
+  ,
+    {
+      "name": "Maranta Leuconeura",
+      "img": "images/plant-4.jpg",
+      "price": {"original_price": 600, "dis_price": 200 },
+      "id":3
+    },
+  
+    {
+      "name": "Polyscias Fabian",
+      "img": "images/plant-5.jpg",
+      "price": {"original_price": 700, "dis_price": 350 },
+      "id":4
+    },
+  
+    {
+      "name": "Sansevieria Trifasciata",
+      "img": "images/plant-6.jpg",
+      "price": {"original_price": 400, "dis_price": 200},
+      "id":5
+    },
+  
+    {
+      "name": "Maidenhair Fern",
+      "img": "images/plant-7.jpg",
+      "price": {"original_price": 700, "dis_price": 350 },
+      "id":6
+    },
+  
+    {
+      "name": "Chakra Crystal Healing",
+      "img": "images/plant-8.jpg",
+      "price": {"original_price": 600, "dis_price": 500 },
+      "id":7
+    },
+    {
+      "name": "Queen Aglaonema",
+      "img": "images/plant-9.jpg",
+      "price": {"original_price": 400, "dis_price": 250 },
+      "id":8
+    }, 
+    {
+      "name": "Bansai Ficus Ginseng",
+      "img": "images/plant-10.jpg",
+      "price": {"original_price": 800, "dis_price": 600 },
+      "id":9
+    }
+  ]
