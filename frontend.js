@@ -62,7 +62,7 @@ cal.classList.remove('active');
       console.log(cart.innerHTML);
 
       //to show product
-      console.log(e.target.value);
+      console.log(e.target.value); 
       id = e.target.value;
       cartHTML(id);
     }
