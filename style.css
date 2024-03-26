@@ -104,7 +104,10 @@ header{
   width: 100%;
   gap: 30px;
   margin-bottom: 30px;
-}.main-pro{
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-pro{
   margin-top: 100px;
 }
 .card {
