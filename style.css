@@ -102,14 +102,24 @@ header{
 }
 .product-container,.product-contain{
   margin-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 100%;
-  gap: 30px;
+ gap: 30px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+width: 100%;
 }
+/* .product-contain{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+width: 100%;
+}
+.product-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-right: 370px;
+} */
 .main-pro{
   margin-top: 100px;
 }
@@ -144,7 +154,7 @@ header{
 }
 .cart-btn,
 .buy-btn,.added,
-.all-Btn {
+.all-Btn,.sidebar-buy {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 18px;
@@ -152,7 +162,7 @@ header{
   border-radius: 30px;
   font-weight: 600;
 }
-.buy-btn {
+.buy-btn,.sidebar-buy {
   background-color: var(--primary-color);
   color:white;
 }
@@ -236,26 +246,29 @@ margin-right: 30px;}
 position: fixed;
 top:100px;
 right: 0;
-bottom: 0;
+bottom: 20px;
 color:white;
 background-color:black;
 width: 350px;
 z-index: 1;
 overflow-y: scroll;
 padding:50px 20px;
-border:1px solid black;
+
+}
+.cross{
+  position:absolute;
+  top:20px;
+  right: 20px;
 }
 .active{
   display: none;
 }
-.cross{
-  position: absolute;
-  top:20px;
-  right: 20px;
-}
+
 .cart-head{
   text-align: center;
-
+  padding-bottom: 10px;
+border-bottom: 3px solid white;
+font-size: 25px;
 }
 .cart-msg{
   margin-top: 50px;
@@ -286,7 +299,7 @@ font-weight: bold;
 .cart-pro button{
 padding: 10px 15px;
 background-color:var(--primary-color);
-color:whit;
+color:white;
 font-weight: bold;
 border:none;
 border-radius:20px;
@@ -296,7 +309,159 @@ border-radius:20px;
   display: flex;
 }
 .calculate{
-  border-top:1px solid grey;
+  border-top:1px solid white;
   text-align: right;
   font-size: 20px;
+}
+
+/*buy*/
+.main-container{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.summary{
+  background-color:var(--primary-color);
+  padding: 20px;
+}
+.summary p{
+  font-size: 20px;
+  font-weight: bold;
+  color:white;
+}
+.main-section{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap:60px;
+
+}
+.show-container{
+  border:1px solid var(--primary-color);
+  margin-bottom: 20px;
+}
+.buy-pro{
+
+display: flex;
+align-items:center;
+justify-content: space-between;
+padding: 10px 30px;
+}
+.buy-pro img{
+  width: 150px;
+}
+.buy-pro .name{
+font-size: 25px;
+font-weight: 500;
+margin-bottom: 20px;
+}
+.buy-pro .discount ,.buy-pro .original{
+  font-size: 15px;
+}
+.continue{
+  text-align: right;
+}
+.continue button{
+  padding: 10px 40px;
+  font-size: 20px;
+  background-color:var(--primary-color);
+  color:white;
+  font-weight: bold;
+  border:none;
+  border-radius:2px;
+}
+.payment-section{
+ 
+ display: flex;
+ flex-direction: column;
+ align-items:center;
+ justify-content:start;
+
+}
+.price-details{
+  border:1px solid var(--primary-color);
+  padding: 40px;
+}
+.price-details .flex-space{
+margin-bottom: 10px;
+}
+.pay-head{
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom:20px ;
+  border-bottom:1px solid gray;
+  margin-bottom: 20px;
+}
+
+.info{
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px;
+}
+.total-pay{
+  font-weight: 600;
+}
+.pay-total{
+  border-top:1px solid grey;
+  border-bottom:1px solid grey;
+}
+.free{
+  font-size: 16px;
+  color:grey;
+  text-decoration: line-through;
+  color:var(--primary-color);
+  margin-left: 5px;
+}
+.statement{
+  color:var(--primary-color);
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.remove-btn{
+  background-color:var(--primary-color);
+  color:white;
+}
+.quantity{
+  display: flex;
+  align-items:center;
+ gap:10px;
+}
+.quantity-btn{
+  font-weight: bold;
+  border:1px solid var(--black-color);
+}
+
+.cart-pay{
+  position: relative;
+}
+.payment-section{
+  position: fixed;
+left: auto;
+right: auto;
+}
+
+.empty-msg-container{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding:40px 20px;
+  flex-direction: column;
+  gap:10px
+}
+.empty-img{
+  width: 100px;
+}
+.empty-msg {
+  font-size: 20px;
+}
+.add-msg{
+  font-size: 16px;
+}
+.shop-btn{
+  background-color:var(--primary-color);
+  color: white;
+}
+.hidden{
+  display: none;
 }

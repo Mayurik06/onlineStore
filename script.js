@@ -1,6 +1,21 @@
 let container = document.querySelector(".product-contain");
 let product = "";
  var allProducts = [];
+let cartCount=document.querySelector('.cart-count');
+let addCartBtn=document.querySelector('.addCartBtn').addEventListener('click',()=>{
+  window.location.href="cart.html";
+})
+
+ const initApp=()=>{
+  fetch('product.json')
+  .then(Response => Response.json())
+  .then(data=>{
+    allProducts=data;
+    console.log(allProducts)
+    addDataToHTML();
+  })
+}
+initApp();
 
  function addDataToHTML(){
 for (let i = 0; i <6; i++) {
@@ -19,13 +34,12 @@ for (let i = 0; i <6; i++) {
 }
  }
 
-const initApp=()=>{
-  fetch('product.json')
-  .then(Response => Response.json())
-  .then(data=>{
-    allProducts=data;
-    console.log(allProducts)
-    addDataToHTML();
-  })
+
+
+function updateCounter(){
+  cartProduct=JSON.parse(localStorage.getItem("cartProducts")) ;
+  console.log(cartProduct);
+  cartCount.innerHTML=`(${cartProduct.length})`;
+ 
 }
-initApp();
+updateCounter();
